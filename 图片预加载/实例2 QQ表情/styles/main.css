@@ -1,0 +1,42 @@
+body,p,ul,li {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #eee;
+}
+ a {
+   text-decoration: none;
+   outline: none;
+ }
+.box {
+  margin: 150px 0 0 200px;
+}
+#face-btn {
+  display: block;
+  color:#333;
+}
+li {
+  list-style: none;
+}
+.panel {
+  display: none;
+  width: 390px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.loading {
+  text-align: center;
+}
+.list li {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.list li:hover {
+  border-color: #06c;
+}

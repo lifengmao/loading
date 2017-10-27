@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>进度条5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .loading{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background: #fff;
+      }
+      .loading .pic {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .loading .pic span {
+        display: block;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 50%;
+        box-shadow: 0 3px 0 #666;
+        animation: rotate 1s infinite linear;
+      }
+      @keyframes rotate {
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+      }
+    </style>
+    <script src="scripts\jquery-3.2.1.min.js"></script>
+    <script>
+      $(function(){
+        var img = $('img');
+        var len = img.length;
+        var num = 0;
+        img.each(function(i) {
+          var oImg = new Image();
+          oImg.onload = function() {
+            oImg.onload = null;
+            num = num + 1;
+
+            $('.loading b').html(parseInt((num/len) * 100) + '%');
+            if(num >= len) {
+
+              $('.loading').fadeOut();
+            }
+          }
+          oImg.src = img[i].src;
+        });
+
+      })
+    </script>
+  </head>
+  <body>
+
+    <div class="loading">
+      <div class="pic">
+        <span></span>
+        <b>0%</b>
+      </div>
+    </div>
+
+
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=bb29e0954db68f1943e09a91bcc866c0&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fe850352ac65c1038b4c28b05b8119313b17e89bd.jpg" alt="saber">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=c8e6df4456fa4d117013df7a1bbc87de&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F2e2eb9389b504fc23a9309dfefdde71191ef6d18.jpg" alt="k-on">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157357&di=f950014c38c82ec51cc6b44026bf74d8&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Ffaf2b2119313b07e14241bcf06d7912396dd8c58.jpg" alt="中二病">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818248392&di=0e898a9a423c420c986dd5bb173af217&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F9922720e0cf3d7ca4208f4b1f81fbe096a63a97f.jpg" alt="俺妹">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=bb29e0954db68f1943e09a91bcc866c0&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fe850352ac65c1038b4c28b05b8119313b17e89bd.jpg" alt="saber">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=c8e6df4456fa4d117013df7a1bbc87de&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F2e2eb9389b504fc23a9309dfefdde71191ef6d18.jpg" alt="k-on">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157357&di=f950014c38c82ec51cc6b44026bf74d8&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Ffaf2b2119313b07e14241bcf06d7912396dd8c58.jpg" alt="中二病">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818248392&di=0e898a9a423c420c986dd5bb173af217&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F9922720e0cf3d7ca4208f4b1f81fbe096a63a97f.jpg" alt="俺妹">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=bb29e0954db68f1943e09a91bcc866c0&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fe850352ac65c1038b4c28b05b8119313b17e89bd.jpg" alt="saber">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=c8e6df4456fa4d117013df7a1bbc87de&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F2e2eb9389b504fc23a9309dfefdde71191ef6d18.jpg" alt="k-on">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157357&di=f950014c38c82ec51cc6b44026bf74d8&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Ffaf2b2119313b07e14241bcf06d7912396dd8c58.jpg" alt="中二病">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818248392&di=0e898a9a423c420c986dd5bb173af217&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F9922720e0cf3d7ca4208f4b1f81fbe096a63a97f.jpg" alt="俺妹">
+
+  </body>
+</html>

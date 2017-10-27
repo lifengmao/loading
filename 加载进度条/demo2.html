@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>进度条2</title>
+    <style>
+      .loading{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background: #fff;
+      }
+      .loading .pic {
+        width: 64px;
+        height: 64px;
+        background: url(images/loading.gif);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    </style>
+    <script src="scripts\jquery-3.2.1.min.js"></script>
+    <script>
+      document.onreadystatechange = function() {
+        if(document.readyState == 'complete') {
+          
+          $('.loading').fadeOut();
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="loading">
+      <div class="pic"></div>
+    </div>
+
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=bb29e0954db68f1943e09a91bcc866c0&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fe850352ac65c1038b4c28b05b8119313b17e89bd.jpg" alt="saber">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=c8e6df4456fa4d117013df7a1bbc87de&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F2e2eb9389b504fc23a9309dfefdde71191ef6d18.jpg" alt="k-on">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157357&di=f950014c38c82ec51cc6b44026bf74d8&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Ffaf2b2119313b07e14241bcf06d7912396dd8c58.jpg" alt="中二病">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818248392&di=0e898a9a423c420c986dd5bb173af217&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F9922720e0cf3d7ca4208f4b1f81fbe096a63a97f.jpg" alt="俺妹">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=bb29e0954db68f1943e09a91bcc866c0&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fe850352ac65c1038b4c28b05b8119313b17e89bd.jpg" alt="saber">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=c8e6df4456fa4d117013df7a1bbc87de&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F2e2eb9389b504fc23a9309dfefdde71191ef6d18.jpg" alt="k-on">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157357&di=f950014c38c82ec51cc6b44026bf74d8&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Ffaf2b2119313b07e14241bcf06d7912396dd8c58.jpg" alt="中二病">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818248392&di=0e898a9a423c420c986dd5bb173af217&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F9922720e0cf3d7ca4208f4b1f81fbe096a63a97f.jpg" alt="俺妹">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=bb29e0954db68f1943e09a91bcc866c0&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fe850352ac65c1038b4c28b05b8119313b17e89bd.jpg" alt="saber">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157363&di=c8e6df4456fa4d117013df7a1bbc87de&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F2e2eb9389b504fc23a9309dfefdde71191ef6d18.jpg" alt="k-on">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818157357&di=f950014c38c82ec51cc6b44026bf74d8&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Ffaf2b2119313b07e14241bcf06d7912396dd8c58.jpg" alt="中二病">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508818248392&di=0e898a9a423c420c986dd5bb173af217&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F9922720e0cf3d7ca4208f4b1f81fbe096a63a97f.jpg" alt="俺妹">
+
+  </body>
+</html>

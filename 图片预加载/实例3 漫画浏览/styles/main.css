@@ -1,0 +1,25 @@
+
+.box {
+  text-align: center;
+
+}
+a {
+  text-decoration: none;
+}
+.box img {
+  width: 1200px;
+
+}
+.btn {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0 10px;
+  margin-right: 50px;
+  color: #333;
+}
+.btn:hover {
+  background: #eee;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>图片预加载之无序加载</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <div class="box">
+      <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508834490537&di=a2670fab9cb209d1183c2e3441fcef83&imgtype=0&src=http%3A%2F%2Fimgstore.cdn.sogou.com%2Fapp%2Fa%2F100540002%2F760050.jpg" alt="pic" id="img">
+      <p>
+        <a href="javascript:;" class="btn" data-control = "prev">上一页</a>
+        <a href="javascript:;" class="btn" data-control = "next">下一页</a>
+      </p>
+    </div>
+
+    <div class="loading">
+      <p class="progress">0%</p>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/main2.js"></script>
+  </body>
+</html>
